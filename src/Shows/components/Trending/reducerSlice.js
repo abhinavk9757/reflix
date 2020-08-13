@@ -13,7 +13,7 @@ const showSlice = createSlice({
   reducers: {
     pending: {
       reducer: (state, {payload}) => {
-        if (payload.page == 1) {
+        if (payload.page === 1) {
           state = {...subShowsSchema, pending: true, page: 1};
         } else {
           state.failed = false;

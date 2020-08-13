@@ -10,9 +10,7 @@ const AuthHeader = (props) => {
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 15,
-      }}
-    >
-
+      }}>
       <Pressable
         onPress={props.navigation.goBack}
         android_ripple={{color: 'white', borderless: false, radius: 10}}>

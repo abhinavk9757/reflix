@@ -1,8 +1,7 @@
 import React, {useEffect} from 'react';
 import {View, FlatList, Text, Pressable, Image} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {pending, failed, success} from './reducerSlice';
-import {bool} from 'prop-types';
+import {success} from './reducerSlice';
 
 const Originals = () => {
   const dispatch = useDispatch();
