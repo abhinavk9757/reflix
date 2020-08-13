@@ -9,18 +9,16 @@
 import React from 'react';
 import 'react-native-gesture-handler';
 import Master from './src/Master';
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 const App = () => {
-  return (
-    <Master />
-  );
+  return <Master />;
 };
 
 export default App;
 
 const styles = StyleSheet.create({
   appNav: {
-    backgroundColor: 'black'
-  }
-})
+    backgroundColor: 'black',
+  },
+});

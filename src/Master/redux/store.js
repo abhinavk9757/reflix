@@ -1,4 +1,4 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import {combineReducers, configureStore} from '@reduxjs/toolkit';
 
 import trendingReducer from '../../Shows/components/Trending/reducerSlice';
 import actionReducer from '../../Shows/components/Action/reducerSlice';
@@ -9,17 +9,17 @@ import teenReducer from '../../Shows/components/Teen/reducerSlice';
 import searchReducer from '../../Search/reducerSlice';
 
 const reducer = combineReducers({
-    actionShows: actionReducer,
-    bingeShows: bingeReducer,
-    originalsShows: originalsReducer,
-    teenShows: teenReducer,
-    trendingShows: trendingReducer,
+  actionShows: actionReducer,
+  bingeShows: bingeReducer,
+  originalsShows: originalsReducer,
+  teenShows: teenReducer,
+  trendingShows: trendingReducer,
 
-    searchResults: searchReducer
-})
+  searchResults: searchReducer,
+});
 
 const store = configureStore({
-    reducer: reducer
-})
+  reducer: reducer,
+});
 
 export default store;

@@ -1,13 +1,12 @@
 const navigatorTheme = {
-    dark: true,
-    colors: {
-        background: 'black',
-        text: 'white'
-    }
-}
+  dark: true,
+  colors: {
+    background: 'black',
+    text: 'white',
+  },
+};
 
 export default navigatorTheme;
-
 
 // dark: boolean;
 // colors: {

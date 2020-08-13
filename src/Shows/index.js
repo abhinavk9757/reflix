@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView} from 'react-native';
+import {ScrollView} from 'react-native';
 import ShowsHeader from './ShowsHeader';
 
 import Trending from './components/Trending';
@@ -9,16 +9,16 @@ import Originals from './components/Originals';
 import Teen from './components/Teen';
 
 const Shows = () => {
-    return (
-        <ScrollView>
-            <ShowsHeader />
-            <Trending />
-            <Action />
-            <Binge />
-            <Originals />
-            <Teen />
-        </ScrollView>
-    );
-}
+  return (
+    <ScrollView>
+      <ShowsHeader />
+      <Trending />
+      <Action />
+      <Binge />
+      <Originals />
+      <Teen />
+    </ScrollView>
+  );
+};
 
 export default Shows;
