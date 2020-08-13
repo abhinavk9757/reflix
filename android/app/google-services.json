@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "123534304974",
+    "firebase_url": "https://re-flix.firebaseio.com",
+    "project_id": "re-flix",
+    "storage_bucket": "re-flix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123534304974:android:a8953687b532739721129f",
+        "android_client_info": {
+          "package_name": "com.reflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123534304974-uec4d5bnud8b12v35annqf7unanm026h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reflix",
+            "certificate_hash": "b7975dd890d2f3372608058d0dcc50a9f1b3bfe7"
+          }
+        },
+        {
+          "client_id": "123534304974-6a8rvft47khuiav7j7isisl7h8blrvda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmh8bpxw2WRL_wt-_QTm8yPZBed_sd04I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123534304974-6a8rvft47khuiav7j7isisl7h8blrvda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
