@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {ScrollView} from 'react-native-gesture-handler';
+import {OMDB_KEY} from '@env';
 
 const Search = () => {
   const [pending, setPending] = useState(false);
@@ -24,7 +25,7 @@ const Search = () => {
     searchTimeout = setTimeout(() => {
       setPending(true);
       fetch(
-        `http://www.omdbapi.com/?s=${movieName.trim()}&apikey=e57085fb&page=1`,
+        `http://www.omdbapi.com/?s=${movieName.trim()}&apikey=${OMDB_KEY}&page=1`,
       )
         .then((res) => res.json())
         .then((res) => {

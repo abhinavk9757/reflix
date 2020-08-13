@@ -2,13 +2,14 @@ import React, {useEffect} from 'react';
 import {View, FlatList, Text, Pressable, Image} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {success} from './reducerSlice';
+import {OMDB_KEY} from '@env';
 
 const Trending = () => {
   const dispatch = useDispatch();
   const trendingShows = useSelector((state) => state.trendingShows);
 
   useEffect(() => {
-    fetch('http://www.omdbapi.com/?s=naruto&apikey=e57085fb&page=1')
+    fetch(`http://www.omdbapi.com/?s=naruto&apikey=${OMDB_KEY}&page=1`)
       .then((res) => res.json())
       .then((res) => dispatch(success({data: res.Search, page: 1})));
   }, []);

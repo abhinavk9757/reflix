@@ -2,13 +2,14 @@ import React, {useEffect} from 'react';
 import {View, FlatList, Text, Pressable, Image} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {pending, failed, success} from './reducerSlice';
+import {OMDB_KEY} from '@env';
 
 const Action = () => {
   const dispatch = useDispatch();
   const actionShows = useSelector((state) => state.actionShows);
 
   useEffect(() => {
-    fetch('http://www.omdbapi.com/?s=action&apikey=e57085fb&page=1')
+    fetch(`http://www.omdbapi.com/?s=action&apikey=${OMDB_KEY}&page=1`)
       .then((res) => res.json())
       .then((res) => dispatch(success({data: res.Search, page: 1})));
   }, []);
