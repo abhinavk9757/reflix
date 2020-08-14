@@ -9,7 +9,7 @@ const Originals = () => {
   const originalsShows = useSelector((state) => state.originalsShows);
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?s=origin&apikey=${OMDB_KEY}&page=1`)
+    fetch(`https://www.omdbapi.com/?s=origin&apikey=${OMDB_KEY}&page=1`)
       .then((res) => res.json())
       .then((res) => dispatch(success({data: res.Search, page: 1})));
   }, []);

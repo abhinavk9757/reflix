@@ -9,7 +9,7 @@ const Binge = () => {
   const bingeShows = useSelector((state) => state.bingeShows);
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?s=guardian&apikey=${OMDB_KEY}&page=1`)
+    fetch(`https://www.omdbapi.com/?s=guardian&apikey=${OMDB_KEY}&page=1`)
       .then((res) => res.json())
       .then((res) => dispatch(success({data: res.Search, page: 1})));
   }, []);

@@ -9,7 +9,7 @@ const Action = () => {
   const actionShows = useSelector((state) => state.actionShows);
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?s=action&apikey=${OMDB_KEY}&page=1`)
+    fetch(`https://www.omdbapi.com/?s=action&apikey=${OMDB_KEY}&page=1`)
       .then((res) => res.json())
       .then((res) => dispatch(success({data: res.Search, page: 1})));
   }, []);

@@ -20,7 +20,7 @@ const GetStarted = (props) => {
       }}
       onPress={navigateToLogin}
       android_ripple={{color: 'white', borderless: false, radius: 10}}>
-      <Text style={{color: 'white'}}>GET STARTED {OMDB_KEY}</Text>
+      <Text style={{color: 'white'}}>GET STARTED</Text>
     </Pressable>
   );
 };

@@ -9,7 +9,7 @@ const Teen = () => {
   const teenShows = useSelector((state) => state.teenShows);
 
   useEffect(() => {
-    fetch(`http://www.omdbapi.com/?s=teen&apikey=${OMDB_KEY}&page=1`)
+    fetch(`https://www.omdbapi.com/?s=teen&apikey=${OMDB_KEY}&page=1`)
       .then((res) => res.json())
       .then((res) => dispatch(success({data: res.Search, page: 1})));
   }, []);

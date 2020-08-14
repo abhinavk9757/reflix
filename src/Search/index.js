@@ -25,7 +25,7 @@ const Search = () => {
     searchTimeout = setTimeout(() => {
       setPending(true);
       fetch(
-        `http://www.omdbapi.com/?s=${movieName.trim()}&apikey=${OMDB_KEY}&page=1`,
+        `https://www.omdbapi.com/?s=${movieName.trim()}&apikey=${OMDB_KEY}&page=1`,
       )
         .then((res) => res.json())
         .then((res) => {
