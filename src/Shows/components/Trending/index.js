@@ -15,7 +15,7 @@ const Trending = () => {
         return res.json();
       })
       .then((res) => dispatch(success({data: res.Search, page: 1})))
-      .catch((e) => ToastAndroid.show('failed get on trnding', ToastAndroid.LONG));
+      .catch((e) => ToastAndroid.show('failed get on trnding ' + e, ToastAndroid.LONG));
   }, []);
 
   const title = 'Japanese Anime';
